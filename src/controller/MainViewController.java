@@ -96,6 +96,10 @@ public class MainViewController {
 	}
 	
 	@FXML
+	/**
+	 * Writes the created nickname in a .txt-file
+	 * @throws IOException
+	 */
 	public void saveButton() throws IOException{
 		NickWriter.writeIN(display.getText());
 	}
