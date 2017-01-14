@@ -9,14 +9,14 @@ import javafx.scene.Scene;
 /**
  * The Main-Class of the Project.
  * @author zzaxec
- * @version 1.1
+ * @version 2.1
  *
  */
 public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			Parent content = FXMLLoader.load(getClass().getResource("/view/MainView.fxml"));
-			Scene scene = new Scene(content,400,400);
+			Scene scene = new Scene(content);
 			primaryStage.setScene(scene);
 			primaryStage.setResizable(false);
 			primaryStage.show();
@@ -24,8 +24,9 @@ public class Main extends Application {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public static void main(String[] args) {
 		launch(args);
 	}
+
 }

@@ -4,9 +4,15 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.io.IOException;
 
+import application.Main;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 import model.Generator;
 import model.NickWriter;
 /**
@@ -39,6 +45,8 @@ public class MainViewController {
 	Button btn_copy;
 	@FXML
 	Button btn_generiere;
+	@FXML
+	Button cntrl_random;
 	
 	
 	/*
@@ -46,6 +54,19 @@ public class MainViewController {
 	 * METHODS
 	 * 
 	 */
+	@FXML
+	public void switchStage(){
+		Stage randomStage = new Stage();
+		Parent randomParent;
+		try {
+			randomParent = FXMLLoader.load(getClass().getResource("/view/RandomView.fxml"));
+			Scene sc = new Scene(randomParent);
+			randomStage.setScene(sc);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		randomStage.show();
+	}
 	
 	@FXML
 	/**

@@ -77,4 +77,15 @@ public class Generator {
 	public void löscheArrayList(){
 		nickStrukt.clear();
 	}
+	
+	public String randomGenerator(int x){
+		Random r = new Random();
+		int zufall;
+		String randomNick = "";
+		for(int i=0; i<x; i++){
+			zufall = r.nextInt(26);
+			randomNick += alphabet.getBuchstabe(zufall);
+		}
+		return randomNick;
+	}
 }
