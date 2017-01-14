@@ -9,7 +9,7 @@ import javafx.scene.Scene;
 /**
  * The Main-Class of the Project.
  * @author zzaxec
- * @version 2.1
+ * @version 2.2
  *
  */
 public class Main extends Application {
