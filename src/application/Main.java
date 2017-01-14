@@ -6,7 +6,11 @@ import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 
-
+/**
+ * The Main-Class of the Project.
+ * @author zzaxec
+ *
+ */
 public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {

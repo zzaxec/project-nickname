@@ -1,5 +1,10 @@
 package model;
-
+/**
+ * The Alphabet-Class includes an Array of objects of the Letter-Class. It initialize the array with a length of 26 thus the whole alphabet
+ * and offers methods to get the character or the sound of the letter.
+ * @author zzaxec
+ *
+ */
 public class Alphabet {
 	
 	Letter[] alph;
@@ -37,7 +42,7 @@ public class Alphabet {
 	}
 	
 	/*
-	 * GETTER UND SETTER // METHODEN
+	 * GETTER AND SETTER
 	 */
 	
 	public String getBuchstabe(int x){

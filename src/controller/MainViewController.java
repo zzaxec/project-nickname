@@ -9,12 +9,13 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import model.Generator;
 import model.NickWriter;
-
+/**
+ * The Controller-Class of the Graphical User Interface
+ * @author Hakan
+ *
+ */
 public class MainViewController {
 	
-	/*
-	 * Daten
-	 */
 	Generator gen = new Generator();
 	private boolean firstStart = false;
 	private boolean firstNick = true;
@@ -22,7 +23,7 @@ public class MainViewController {
 	private boolean structRun = true;
 	
 	/*
-	 * Interface
+	 * Interfacecomponents
 	 */
 	@FXML
 	TextField display;
@@ -47,6 +48,9 @@ public class MainViewController {
 	 */
 	
 	@FXML
+	/**
+	 * Adds a consonant in the structure. The current structure will be shown in the display.
+	 */
 	public void addKonsonant(){
 		if(structRun){
 			if(!firstStart){
@@ -60,6 +64,9 @@ public class MainViewController {
 	}
 	
 	@FXML 
+	/**
+	 * Adds a vocal in the structure. The current structure will be shown in the display.
+	 */
 	public void addVokal(){
 		if(structRun){
 			if(!firstStart){
@@ -73,6 +80,9 @@ public class MainViewController {
 	}
 	
 	@FXML
+	/**
+	 * Generates a new nickname with help of the instance of the Generator-Class
+	 */
 	public void generateNewNick(){
 		if(run){
 			structRun = false;
@@ -86,6 +96,10 @@ public class MainViewController {
 	}
 	
 	@FXML
+	/**
+	 * Clears the created nickname and goes into the initial state. The Structure will be cleared 
+	 * and the necessary variables get set.
+	 */
 	public void clearButton(){
 		display.setText("Eingaben gelöscht. Bitte neue Eingabe!");
 		gen.löscheArrayList();
@@ -105,6 +119,9 @@ public class MainViewController {
 	}
 	
 	@FXML
+	/**
+	 * Copies the current nickname to the clipboard.
+	 */
 	public void copyButton(){
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new StringSelection(display.getText()), null);
 	}
