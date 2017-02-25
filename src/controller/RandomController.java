@@ -13,6 +13,8 @@ import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import model.Generator;
 import model.NickWriter;
@@ -23,6 +25,7 @@ import model.NickWriter;
  *
  */
 public class RandomController {
+	
 	
 	private int length;
 	private boolean run = false;

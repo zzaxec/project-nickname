@@ -5,11 +5,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 
 /**
  * The Main-Class of the Project.
  * @author zzaxec
- * @version 2.2
+ * @version 3.0
  *
  */
 public class Main extends Application {
@@ -17,6 +18,8 @@ public class Main extends Application {
 		try {
 			Parent content = FXMLLoader.load(getClass().getResource("/view/MainView.fxml"));
 			Scene scene = new Scene(content);
+			primaryStage.setTitle("NickGen v3.0");
+			primaryStage.getIcons().add(new Image("file:icons/zzaxec.jpg"));
 			primaryStage.setScene(scene);
 			primaryStage.setResizable(false);
 			primaryStage.show();
