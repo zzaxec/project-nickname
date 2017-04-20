@@ -133,8 +133,8 @@ public class MainViewController {
 	 * and the necessary variables get set.
 	 */
 	public void clearButton(){
-		display.setText("Eingaben gelöscht. Bitte neue Eingabe!");
-		gen.löscheArrayList();
+		display.setText("Eingaben gelï¿½scht. Bitte neue Eingabe!");
+		gen.loescheArrayList();
 		firstNick = true;
 		firstStart = false;
 		run = false;

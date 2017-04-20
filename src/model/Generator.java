@@ -74,7 +74,7 @@ public class Generator {
 	/**
 	 * Removes all the elements of the ArrayList and clears thus the structure to start over.
 	 */
-	public void löscheArrayList(){
+	public void loescheArrayList(){
 		nickStrukt.clear();
 	}
 	
